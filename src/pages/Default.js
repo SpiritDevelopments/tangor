@@ -2,7 +2,7 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 
 //screens
-import Home from './Home';
+import Welcome from './Welcome';
 import Card from './Card';
 import Login from './Login';
 
@@ -13,7 +13,7 @@ class Default extends React.Component {
                 <header>Tangor</header>
                 <main>
                     <Switch>
-                        <Route exact path="/" component={Home} />
+                        <Route exact path="/" component={Welcome} />
                         <Route path="/card" component={Card} />
                         <Route path="/login" component={Login} />
                         <Route render={() => <p>not found!.</p>} />
